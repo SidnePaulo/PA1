@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - TechPhone</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/contacto.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="container">
+      <a href="index.html" class="logo">TechPhone</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html#inicio">Inicio</a></li>
+        <li><a href="index.html#características">Características</a></li>
+        <li><a href="index.html#productos">Productos</a></li>
+        <li><a href="index.html#testimonios">Testimonios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <button class="menu-toggle" onclick="toggleMenu()" aria-label="Menú de navegación">☰</button>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-contact">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Contáctanos</h1>
+        <p>Estamos aquí para ayudarte con cualquier consulta sobre nuestros productos</p>
+        <div class="hero-animation">
+          <svg class="phone-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="25" y="10" width="50" height="80" rx="8" fill="#667eea" class="phone-body"/>
+            <rect x="30" y="20" width="40" height="60" rx="2" fill="#fff" class="phone-screen"/>
+            <circle cx="50" cy="85" r="3" fill="#ffd700" class="phone-button"/>
+            <rect x="35" y="15" width="30" height="2" rx="1" fill="#ccc" class="phone-speaker"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="contact-content">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <div class="contact-form-section">
+          <h2>Envíanos un mensaje</h2>
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="nombre">Nombre completo</label>
+              <input type="text" id="nombre" name="nombre" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono">
+            </div>
+            
+            <div class="form-group">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Selecciona un asunto</option>
+                <option value="consulta">Consulta de producto</option>
+                <option value="soporte">Soporte técnico</option>
+                <option value="garantia">Garantía</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">
+              <span>Enviar mensaje</span>
+              <svg class="send-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 2L11 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 2L15 22L11 13L2 9L22 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info-section">
+          <h2>Información de contacto</h2>
+          
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21 10C21 17 12 23 12 23S3 17 3 10C3 5.029 7.029 1 12 1S21 5.029 21 10Z" stroke="currentColor" stroke-width="2"/>
+                <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Dirección</h3>
+              <p>Calle Tecnología 123<br>28001 Madrid, España</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M22 16.92V19.92C22 20.51 21.39 21 20.83 21C9.28 21 0 11.72 0 0.17C0 -0.39 0.49 -1 1.08 -1H4.08C4.67 -1 5.08 -0.51 5.08 0.08C5.08 1.58 5.22 3.04 5.46 4.45C5.54 4.96 5.38 5.47 5.01 5.84L3.57 7.28C5.36 10.91 8.09 13.64 11.72 15.43L13.16 13.99C13.53 13.62 14.04 13.46 14.55 13.54C15.96 13.78 17.42 13.92 18.92 13.92C19.51 13.92 20 14.33 20 14.92V16.92H22Z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Teléfonos</h3>
+              <p>Principal: +34 900 123 456<br>Soporte: +34 900 123 457</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="4" width="20" height="16" rx="2" stroke="currentColor" stroke-width="2"/>
+                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Email</h3>
+              <p>info@techphone.com<br>soporte@techphone.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2"/>
+              </svg>
+            </div>
+            <div class="contact-details">
+              <h3>Horarios</h3>
+              <p>Lun-Vie: 9:00 - 18:00<br>Sáb: 10:00 - 14:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="map-section">
+    <div class="container">
+      <h2>Encuéntranos</h2>
+      <div class="map-container">
+        <div class="map-placeholder">
+          <svg class="map-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="10" width="80" height="60" rx="5" fill="#f0f0f0" stroke="#ddd" stroke-width="2"/>
+            <circle cx="50" cy="40" r="8" fill="#667eea" class="map-marker">
+              <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <path d="M50 32 L50 48 M42 40 L58 40" stroke="#fff" stroke-width="2"/>
+            <text x="50" y="85" text-anchor="middle" fill="#666" font-size="8">Madrid, España</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section">
+    <div class="container">
+      <h2>Nuestra tienda</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1721322800607-8c38375eef04?w=500&h=400&fit=crop" alt="Interior de nuestra tienda" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Showroom principal</h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?w=500&h=400&fit=crop" alt="Área de productos" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Área de productos</h3>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1524230572899-a752b3835840?w=500&h=400&fit=crop" alt="Servicio técnico" loading="lazy">
+          <div class="gallery-overlay">
+            <h3>Servicio técnico</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <section class="footer-section">
+          <h3>TechPhone</h3>
+          <p>Líderes en tecnología móvil con los mejores smartphones del mercado.</p>
+        </section>
+        
+        <section class="footer-section">
+          <h3>Enlaces</h3>
+          <nav>
+            <p><a href="index.html">Inicio</a></p>
+            <p><a href="index.html#productos">Productos</a></p>
+            <p><a href="contacto.html">Contacto</a></p>
+          </nav>
+        </section>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 TechPhone. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      const navLinks = document.getElementById('navLinks');
+      navLinks.classList.toggle('active');
+    }
+
+    // Form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Add loading state
+      const submitBtn = this.querySelector('.submit-btn');
+      const originalText = submitBtn.innerHTML;
+      submitBtn.innerHTML = '<span>Enviando...</span>';
+      submitBtn.disabled = true;
+      
+      // Simulate form submission
+      setTimeout(() => {
+        submitBtn.innerHTML = '<span>¡Mensaje enviado!</span>';
+        submitBtn.style.background = '#22c55e';
+        
+        setTimeout(() => {
+          submitBtn.innerHTML = originalText;
+          submitBtn.disabled = false;
+          submitBtn.style.background = '';
+          this.reset();
+        }, 2000);
+      }, 1000);
+    });
+
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+        document.getElementById('navLinks').classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
